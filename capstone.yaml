@@ -1,0 +1,66 @@
+# FlyRank Backend Capstone Evaluator Manifest
+# AI Image Understanding & Content Matching Engine
+# Student: Deepak R
+
+version: "1.0"
+name: "flyrank-capstone-image-relevance"
+language: "python"
+framework: "fastapi"
+
+run: "uvicorn main:app --host 0.0.0.0 --port 8000"
+seed: "curl -s -X POST http://localhost:8000/seed"
+test: "python tests/test_probes.py"
+eval: "python run_eval.py"
+
+base_url: "http://localhost:8000"
+
+top_1_precision: 100.0%
+
+endpoints:
+  root:
+    path: "/"
+    method: "GET"
+    expected_status: 200
+
+  seed_corpus:
+    path: "/seed"
+    method: "POST"
+    expected_status: 200
+
+  batch_status:
+    path: "/batch/status"
+    method: "GET"
+    expected_status: 200
+
+  match_fox_post:
+    path: "/posts/post-fox-01/images"
+    method: "GET"
+    expected_status: 200
+
+  force_wolf_rejection:
+    path: "/posts/post-fox-01/images?force_candidate_id=img-wolf-01"
+    method: "GET"
+    expected_status: 200
+
+  no_confident_match:
+    path: "/posts/post-space-01/images"
+    method: "GET"
+    expected_status: 200
+
+  cost_audit:
+    path: "/costs"
+    method: "GET"
+    expected_status: 200
+
+  reviews:
+    path: "/reviews"
+    method: "GET"
+    expected_status: 200
+
+probes:
+  probe_1: "test_probe_1_batch_processing_and_low_confidence_flagging"
+  probe_2: "test_probe_2_red_fox_ranking_over_wolf_and_dog"
+  probe_3: "test_probe_3_mismatch_guard_rejects_wolf_on_fox_post"
+  probe_4: "test_probe_4_no_confident_match_when_no_image_clears_bar"
+  probe_5: "test_probe_5_evaluation_top1_precision"
+  probe_6: "test_probe_6_cost_tracking_per_call"

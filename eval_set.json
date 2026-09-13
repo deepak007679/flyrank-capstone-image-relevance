@@ -1,0 +1,86 @@
+[
+  {
+    "post_id": "post-fox-01",
+    "title": "The Secret Life of Red Foxes in Autumn",
+    "expected_subject": "red fox",
+    "expected_category": "animal",
+    "expected_image_prefix": "img-fox-"
+  },
+  {
+    "post_id": "post-fox-02",
+    "title": "Hunting Behaviors of Vulpes vulpes",
+    "expected_subject": "red fox",
+    "expected_category": "animal",
+    "expected_image_prefix": "img-fox-"
+  },
+  {
+    "post_id": "post-fox-03",
+    "title": "Wild Red Fox Kits Playing in the Den",
+    "expected_subject": "red fox",
+    "expected_category": "animal",
+    "expected_image_prefix": "img-fox-"
+  },
+  {
+    "post_id": "post-wolf-01",
+    "title": "Apex Predators: The Alpine Gray Wolf Pack",
+    "expected_subject": "gray wolf",
+    "expected_category": "animal",
+    "expected_image_prefix": "img-wolf-"
+  },
+  {
+    "post_id": "post-wolf-02",
+    "title": "Howling in the Snow: Canis lupus Territory",
+    "expected_subject": "gray wolf",
+    "expected_category": "animal",
+    "expected_image_prefix": "img-wolf-"
+  },
+  {
+    "post_id": "post-dog-01",
+    "title": "Choosing the Ideal Golden Retriever Family Pet",
+    "expected_subject": "domestic dog",
+    "expected_category": "animal",
+    "expected_image_prefix": "img-dog-"
+  },
+  {
+    "post_id": "post-dog-02",
+    "title": "Training Domestic Dogs for Backyard Fetch",
+    "expected_subject": "domestic dog",
+    "expected_category": "animal",
+    "expected_image_prefix": "img-dog-"
+  },
+  {
+    "post_id": "post-bear-01",
+    "title": "Grizzly Bears and the Annual Salmon Run",
+    "expected_subject": "grizzly bear",
+    "expected_category": "animal",
+    "expected_image_prefix": "img-bear-"
+  },
+  {
+    "post_id": "post-bear-02",
+    "title": "Brown Bear Hibernation Cycles in Northern Forests",
+    "expected_subject": "grizzly bear",
+    "expected_category": "animal",
+    "expected_image_prefix": "img-bear-"
+  },
+  {
+    "post_id": "post-deer-01",
+    "title": "Graceful Grazers: White-Tailed Deer at Dawn",
+    "expected_subject": "white-tailed deer",
+    "expected_category": "animal",
+    "expected_image_prefix": "img-deer-"
+  },
+  {
+    "post_id": "post-deer-02",
+    "title": "Forest Herbivores: Antler Growth in Wild Deer",
+    "expected_subject": "white-tailed deer",
+    "expected_category": "animal",
+    "expected_image_prefix": "img-deer-"
+  },
+  {
+    "post_id": "post-space-01",
+    "title": "James Webb Space Telescope Explores Deep Nebula",
+    "expected_subject": "space telescope nebula",
+    "expected_category": "astronomy",
+    "expected_image_prefix": "NO_MATCH"
+  }
+]
